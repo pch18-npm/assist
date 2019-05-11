@@ -19,5 +19,14 @@
   },
   "directories": {
     "test": "test"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pch18-npm/assist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pch18-npm/assist/issues"
+  },
+  "homepage": "https://github.com/pch18-npm/assist#readme"
 }

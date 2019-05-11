@@ -1,13 +1,24 @@
-#!/usr/bin/env node
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class main {
-    constructor() {
-        this.PackageJson = require('../package.json');
+exports.random_str = (length = 32, chars_type = 'all') => {
+    var randStrChars = {
+        num: '0123456789',
+        yzm: 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789',
+        all: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+    };
+    const chars = randStrChars[chars_type];
+    let maxPos = chars.length;
+    let str = '';
+    for (let i = 0; i < length; i++) {
+        str += chars.charAt(Math.floor(Math.random() * maxPos));
     }
-    run() {
-        console.log('\x1B[35m%s\x1B[39m\x1B[32m %s\x1B[39m', 'Hello World by:', this.PackageJson.name);
+    return str;
+};
+exports.intPlus = (...num) => {
+    let total = 0;
+    for (let n of num) {
+        total += parseInt(n);
     }
-}
-exports.main = main;
+    return total;
+};
 //# sourceMappingURL=app.js.map

@@ -1,7 +1,3 @@
-#!/usr/bin/env node
-export declare class main {
-    PackageJson: any;
-    constructor();
-    run(): void;
-}
+export declare const random_str: (length?: number, chars_type?: "all" | "num" | "yzm") => string;
+export declare const intPlus: (...num: any[]) => number;
 //# sourceMappingURL=app.d.ts.map

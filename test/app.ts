@@ -1,2 +1,3 @@
-import { main } from '../main/app'
-new main().run()
+import { random_str } from '../main/app';
+
+random_str
